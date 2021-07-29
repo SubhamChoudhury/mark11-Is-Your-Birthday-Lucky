@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" />
-  <title>Lucky Birthday</title>
-</head>
-<body>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lucky Birthday</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parallax">
+        <div class="titleOfPage">
+          <h1>Is Your Birthday Lucky?</h1>
+          <a href="#mainSection">Click here to find out!</a>
+        </div>
+      </div>
+      <section id="mainSection" class="section">
+        <div id="alertBox">
+          <div class="notice">
+            <strong>Privacy Notice!</strong> We are not storing your data.
+          </div>
+          <span role="img" aria-labelledby="crossIcon"> &#10060; </span>
+        </div>
+
+        <h2>Enter Your Birthdate and lucky number to continue.</h2>
+        <form action="" class="form">
+          <label class="label"> Select your Birth date: </label>
+          <input id="date" type="date" required />
+          <label class="label"> Enter your Lucky Number: </label>
+          <input id="luckyNo" min="1" step="1" type="number" required />
+          <div class="btn-container">
+            <button class="submit-btn" type="submit">check</button>
+          </div>
+        </form>
+
+        <div class="output"></div>
+
+        <footer>
+          <ul>
+            <li class="footerLink">
+              <a href="https://github.com/SubhamChoudhury">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="footerLink">
+              <a href="https://twitter.com/SubhamC_14">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="footerLink">
+              <a href="https://www.linkedin.com/in/subham-choudhury/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="footerLink">
+              <a href="https://subhamchoudhury.tech">
+                <i class="fas fa-briefcase"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="legacyText">
+            &copy; 2021 | Subham Choudhury |
+            <a href="#alertBox"> Privacy Policy </a>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
